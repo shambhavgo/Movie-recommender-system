@@ -1,14 +1,14 @@
 # Movie-Recommendation-System-Using-Cosine-Similarity
-A machine learning model to recommend movies &amp; tv series.
-This model is completely build in python using cosine similarity.
-I can get recommendations for the movie or TV series name that I input and also if I click on those recommendation it'll redirect me to their respective IMDb webpages.
+* A machine learning model to recommend movies &amp; tv series.
+* This model is content based recommendation system completely build in python applying the concepts of cosine similarity.
+* The core logic is based on the fact that there is a high probability of users liking similar content based on their watch history.
+* Here Pygame is to deploy the system locally which takes movie name input for predicting the recommendations.
+* It also provides a dropdown list of the movies in accordance with the letter written until now and a hyperlink to redirect users to the IMDB website of the movie recommended.
 
 Libraries to install: 
-Pygame
-tkinter
-webbrowser
-
-
+* Pygame
+* tkinter
+* webbrowser
 
 ## Demo Video
 
