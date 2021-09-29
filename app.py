@@ -4,8 +4,8 @@ import pygame
 import time
 from functools import partial
 from tkinter import ttk
-import recommendation_system as ims
-from tk_Hyperlink_Manager import *
+import recommendor_system as ims
+from Hyperlink_tk_Manager import *
 
 
 def open_popup():
