@@ -4,24 +4,8 @@ import pygame
 import time
 from functools import partial
 from tkinter import ttk
-import imdb_recommendation_system as ims
-from tkHyperlinkManager import *
-
-
-# def play_menu_sound(option):
-#     """
-#     :type option: str
-#     :return: None
-#     Plays a sound based on the 'option' argument
-#     """
-#     if option == 'menu_bar':
-#         pygame.mixer.music.load('music/button-11.wav')
-#         pygame.mixer.music.play()
-#     elif option == 'quit':
-#         pygame.mixer.music.load('music/quit.wav')
-#         pygame.mixer.music.play()
-#         time.sleep(0.3)
-#         root.destroy()
+import recommendation_system as ims
+from tk_Hyperlink_Manager import *
 
 
 def open_popup():
@@ -33,8 +17,6 @@ def update_values():
     :return: None
     Updates the content in the dropdown menu based on the keyword entered in the text field.
     """
-#     pygame.mixer.music.load('music/button-3.wav')
-#     pygame.mixer.music.play()
     filter_str = combo1.get().lower()
     filter_str = ' '.join([word for word in re.split(r'\s+', filter_str) if word != ''])  # handling white space
     # if no input is provided show the entire database
@@ -59,8 +41,6 @@ def open_link(my_url):
     :return: None
     Opens the provided URL in your default browser.
     """
-#     pygame.mixer.music.load('music/open_browser.wav')
-#     pygame.mixer.music.play()
     webbrowser.open_new(url=my_url)
 
 
@@ -70,8 +50,6 @@ def get_text(event=None):
     :return: None
     Gets the recommendations and shows it in a text widget.
     """
-#     pygame.mixer.music.load('music/button-3.wav')
-#     pygame.mixer.music.play()
     text_widget = Text(frame, font='Courier 13 italic', cursor='arrow', bg='yellow', height=11, width=60)
     hyperlink = HyperlinkManager(text_widget)
     text_widget.tag_configure('tag-center', justify='center')
