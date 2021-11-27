@@ -137,5 +137,4 @@ combo1.bind('<Return>', get_text)
 
 # main loop
 if __name__ == '__main__':
-    pygame.mixer.init()
     root.mainloop()
