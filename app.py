@@ -96,7 +96,7 @@ helpMenu.add_separator()
 helpMenu.add_command(label='See project in GitHub...', command=lambda: webbrowser.open_new("https://github.com/shambhavgo"))
 helpMenu.add_separator()
 # helpMenu.add_command(label='Exit', command=partial(play_menu_sound, 'quit'))
-helpMenu.add_command(label='Exit')
+helpMenu.add_command(label='Exit',command=quit)
 
 # setting background image for our app
 bg_image = PhotoImage(file=r'images/new_bg_image.png')
